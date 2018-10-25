@@ -11,6 +11,8 @@ def rename_files():
     os.chdir(r"C:\Users\juanj\Documents\PycharmProjects\python-basics\udacity\prank")
     translation_table = str.maketrans("0123456789", "          ", "0123456789")
     for f_name in file_list:
+        print("File old name: "+f_name)
+        print("File new name: " + f_name.translate(translation_table))
         os.rename(f_name, f_name.translate(translation_table))
 
     os.chdir(saved_path)
