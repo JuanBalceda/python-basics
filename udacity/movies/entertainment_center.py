@@ -16,4 +16,7 @@ star_wars = media.Movie("Star Wars", "Story of Anakin Skywalker childhood.",
 # star_wars.show_trailer()
 movies = [toy_story, avatar, star_wars]
 # fresh_tomatoes.open_movies_page(movies)
-print(media.Movie.VALID_RATINGS)
+# print(media.Movie.VALID_RATINGS)
+print(media.Movie.__doc__)
+print(media.Movie.__name__)
+print(media.Movie.__module__)
